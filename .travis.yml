@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t quay.io/bcbio/bcbio-validation-checker .
+  - pip2.7 install --user setuptools
+
+install:
+  - pip2.7 install --user cwltool
+
+script:
+  - cwltool Dockstore.cwl test.json
