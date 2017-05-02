@@ -1,0 +1,13 @@
+sample,caller,vtype,metric,value
+test-val,precalled,SNPs,tp,9
+test-val,precalled,Indels,tp,0
+test-val,precalled,SNPs,fp,0
+test-val,precalled,Indels,fp,0
+test-val,precalled,SNPs,fn,0
+test-val,precalled,Indels,fn,0
+test-val-2,freebayes,SNPs,tp,9
+test-val-2,freebayes,Indels,tp,0
+test-val-2,freebayes,SNPs,fp,1
+test-val-2,freebayes,Indels,fp,3
+test-val-2,freebayes,SNPs,fn,0
+test-val-2,freebayes,Indels,fn,0
