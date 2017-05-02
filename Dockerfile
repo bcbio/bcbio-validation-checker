@@ -9,7 +9,7 @@ USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends python-dev git python-setuptools python-pip
 
-COPY bin/check_bcbio_validation.py /usr/local/bin/
-RUN chmod a+x /usr/local/bin/check_bcbio_validation.py
+COPY bin/bcbio_check_validation.py /usr/local/bin/
+RUN chmod a+x /usr/local/bin/bcbio_check_validation.py
 
 CMD ["/bin/bash"]

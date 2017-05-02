@@ -27,4 +27,4 @@ outputs:
     outputBinding:
       glob: "results.json"
 
-baseCommand: ["python", "/usr/local/bin/bcbio_validation_check.py"]
+baseCommand: ["python", "/usr/local/bin/bcbio_check_validation.py"]

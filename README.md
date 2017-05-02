@@ -1,6 +1,6 @@
 # Check bcbio validation runs
 
-Compares validation outputs from [bcbio](http://bcb.io) runs against existing
+Compare validation outputs from [bcbio](http://bcb.io) against existing
 truth sets. Designed for the GA4GH-DREAM Tool Execution Challenge, this provides
 a Docker container and [CWL](http://www.commonwl.org/) wrapper for verifying
 that a bcbio validation is correct. bcbio itself runs alignment, variantcalling
