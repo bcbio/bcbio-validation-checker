@@ -27,4 +27,9 @@ outputs:
     outputBinding:
       glob: "results.json"
 
+  log:
+    type: File
+    outputBinding:
+      glob: "log.txt"
+
 baseCommand: ["python", "/usr/local/bin/bcbio_check_validation.py"]

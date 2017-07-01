@@ -12,3 +12,4 @@ install:
 
 script:
   - cwltool Dockstore.cwl test.json
+  - docker push quay.io/bcbio/bcbio-validation-checker:latest
