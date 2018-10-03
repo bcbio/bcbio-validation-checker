@@ -8,7 +8,10 @@ import csv
 import json
 import sys
 
-def main(base_output, cur_output):
+def main(base_output, *cur_outputs):
+    # use first grading summary when scattered analysis, could be smarter about picking
+    # if we have some logic about what to use with multiple
+    cur_output = cur_outputs[0]
     threshold = 0.0025  # 0.25% different relative to initial output
     base_vals = _validation_to_vals(base_output)
     cur_vals = _validation_to_vals(cur_output)
@@ -54,8 +57,8 @@ def _validation_to_vals(val_output):
     return out
 
 if __name__ == "__main__":
-    if len(sys.argv[1:]) != 2:
-        print("Incorrect arguments, expect two inputs")
+    if len(sys.argv[1:]) < 2:
+        print("Incorrect arguments, expect at least two inputs")
         print("Usage:")
         print("  bcbio_check_validations.py truth.csv tocheck.csv")
         sys.exit()

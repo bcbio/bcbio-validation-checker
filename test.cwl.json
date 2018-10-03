@@ -3,8 +3,14 @@
         "class": "File",
         "path": "baseline-grading-summary-NA12878-chr20.csv"
     },
-    "comparison": {
+    "comparison": [{
         "class": "File",
         "path": "grading-summary-NA12878-chr20.csv"
+    },
+    null,
+    {
+        "class": "File",
+        "path": "grading-summary-NA12878-chr20-2.csv"
     }
+    ]
 }
